@@ -1,0 +1,57 @@
+@import "../../index.scss";
+nav {
+  width: $Full_Width;
+  background-color: $navbar-bg-col;
+  height: 45px;
+  padding: 10px 60px;
+  a {
+    color: gray;
+    font-size: $font-md;
+    text-decoration: none;
+    padding: 20px 10px;
+  }
+}
+.layout {
+  font-size: $font-lg;
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  a {
+    font-size: $font-md;
+    padding: 20px 10px;
+  }
+  .layout {
+    font-size: $font-lg;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 599px) {
+  nav {
+    padding: 10px 40px;
+    a {
+      font-size: $font-sm;
+      padding: 20px 10px;
+    }
+  }
+  .layout {
+    font-size: $font-md;
+  }
+}
+
+@media screen and (min-width: 260px) and (max-width: 424px) {
+  nav {
+    width: $Full_Width;
+    background-color:$navbar-bg-col;
+    display: grid;
+    height: 140px;
+    padding: 10px 30%;
+
+    a {
+      font-size: $font-xsm;
+      padding: 0px 30%;
+    }
+  }
+  .layout {
+    font-size: $font-sm;
+  }
+}

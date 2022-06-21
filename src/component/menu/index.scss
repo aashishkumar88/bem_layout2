@@ -1,0 +1,62 @@
+@import "../../index.scss";
+.menu {
+  width: $Full_Width;
+  hr {
+  margin: 20px 0px;
+  border: 1px solid $items-bg-col;
+  background-color: $items-bg-col;
+}
+
+  &__head {
+    font-size: 24px;
+    font-weight: 500;
+  }
+}
+
+
+
+.horizon {
+  margin: 50px 0px;
+}
+.card {
+  margin-top: 10px;
+  display: flex;
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+.menu {
+    width: $Full_Width;
+    .horizon {
+    margin: 45px 0px;
+  }
+}
+}
+
+@media screen and (min-width: 425px) and (max-width: 599px) {
+  .menu {
+    width: $Full_Width;
+    .horizon {
+    margin: 40px 0px;
+  }
+  
+  .card{
+     margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+}
+@media screen and (min-width: 260px) and (max-width: 424px) {
+  .menu {
+    width: $Full_Width;
+    .horizon {
+    margin: 35px 0px;
+  }
+
+  .card {
+     margin-top: 10px;
+    display: block;
+    flex-wrap: wrap;
+  }
+}
+}
