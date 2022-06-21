@@ -1,0 +1,105 @@
+@import "../../index.scss";
+.card__item {
+    margin-right: 10px;
+    border: 1px solid $items-bg-col;
+    border-radius: 5px;
+
+    img {
+      width: $Full_Width;
+      object-fit: cover;
+      padding: 5px;
+    }
+    .text {
+  text-align: center;
+  margin: 20px 10px;
+
+  span {
+    font-size: $font-lg;
+    font-weight: 500;
+  }
+  p {
+    font-size: $font-sm;
+    margin: 10px;
+  }
+}
+button {
+  padding: 10px 12px;
+  background-color: #428bca;
+  color: $card-col;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: $font-sm;
+  margin-bottom: 5px;
+}
+.info {
+  background-color: $card-col;
+  color: $navbar-bg-col;
+  border: 1px solid rgb(218, 217, 217);
+}
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 768px) {
+     .card__item {
+    margin-bottom: 20px;
+    width: 48%;
+
+    .text {
+      .text span {
+        font-size: $font-xlg;
+        font-weight: 500;
+      }
+      .text p {
+        font-size: $font-md;
+      }
+    }
+  }
+}
+  button {
+    padding: 10px 12px;
+    font-size: $font-md;
+  }
+
+  @media screen and (min-width: 425px) and (max-width: 599px) {
+     .card__item{
+    margin-bottom: 20px;
+    width: 47%;
+  .text {
+    .text span {
+      font-size: $font-xlg;
+      font-weight: 500;
+    }
+    .text p {
+      font-size: $font-md;
+    }
+  }
+}
+  }
+  button {
+    padding: 10px 12px;
+    font-size: $font-md;
+  }
+
+@media screen and (min-width: 260px) and (max-width: 424px) {
+   &__item {
+      margin-bottom: 20px;
+      width: 98%;
+      .text {
+        margin: 10px 10px;
+
+        .text span {
+          font-size: $font-lg;
+          font-weight: 500;
+        }
+        .text p {
+          font-size: $font-xsm;
+        }
+      }
+    }
+  button {
+    padding: 9px 11px;
+    font-size: $font-xsm;
+  }
+}
+
+

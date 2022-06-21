@@ -1,0 +1,95 @@
+ @import "../../index.scss";
+ .section {
+  padding: 40px 70px;
+  margin: 20px 0px;
+  width: 100%;
+  .section__box {
+    width: $Full_Width;
+    padding: 60px 60px;
+    background-color: $items-bg-col;
+    border-radius: 8px;
+
+    &__header {
+      font-size: 45px;
+    }
+      p {
+  font-size: $font-lg;
+  margin: 10px 0px;
+}
+button {
+  padding: 10px 12px;
+  background-color: #428bca;
+  color: $card-col;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: $font-sm;
+  margin-bottom: 5px;
+}
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .section {
+    padding: 50px 50px;
+    width: $Full_Width;
+    &__box {
+      width: $Full_Width;
+      &__box p {
+        font-size: $font-sm;
+      }
+      &__header {
+        font-size: 35px;
+      }
+       button {
+    padding: 10px 12px;
+    font-size: $font-md;
+  }
+
+    }
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 599px) {
+  .section {
+    margin: 0px 0px;
+    padding: 40px 40px;
+    width: $Full_Width;
+    &__box {
+      padding: 40px 40px;
+      width: $Full_Width;
+      &__box p {
+        font-size: $font-sm;
+      }
+       button {
+    padding: 10px 12px;
+    font-size: $font-md;
+  }
+      &__header {
+        font-size: 35px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 260px) and (max-width: 424px) {
+  .section {
+    margin: 0px 0px;
+    padding: 30px 30px;
+    width: $Full_Width;
+    &__box {
+      padding: 30px 40px;
+      width: $Full_Width;
+      &__box p {
+        font-size: $font-xsm;
+      }
+       button {
+    padding: 9px 11px;
+    font-size: $font-xsm;
+  }
+      &__header {
+        font-size: 25px;
+      }
+    }
+  }
+}
